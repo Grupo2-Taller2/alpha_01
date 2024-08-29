@@ -29,7 +29,7 @@ public class Main {
         SwingUtilities.invokeLater(() -> {
             Connection connection = null;
             try {
-                String dbPath = "jdbc:sqlite:F:/SQLite/carmen_sandiego.db";
+                String dbPath = "jdbc:sqlite:src/main/resources/carmen_sandiego.db";
                 connection = DriverManager.getConnection(dbPath);
                 connection.setAutoCommit(false);  // Desactivar auto-commit para manejar transacciones manualmente
 
